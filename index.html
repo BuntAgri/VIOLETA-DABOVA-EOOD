@@ -1,78 +1,116 @@
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>V.E. BATIMENT</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>VIOLETA DABOVA EOOD</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', sans-serif; background: #f9fafb; color: #111827; line-height: 1.6; }
-    header, footer { background: #1f2937; color: white; text-align: center; padding: 30px; }
-    nav a { color: #fbbf24; margin: 0 12px; text-decoration: none; font-weight: 600; }
-    section { padding: 60px 20px; max-width: 1200px; margin: auto; text-align: center; }
-    h2 { color: #1f2937; margin-bottom: 20px; font-size: 2.4em; }
-    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-    .gallery img { width: 100%; border-radius: 8px; }
-    .contact-form input, .contact-form textarea {
-      width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px;
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fdfafc;
     }
-    iframe { width: 100%; height: 300px; border: 0; border-radius: 8px; margin-top: 20px; }
+
+    header {
+      background: #c977b3;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      border-radius: 14px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      transition: 0.3s ease;
+    }
+
+    .section:hover {
+      transform: scale(1.01);
+    }
+
+    .section img {
+      width: 45%;
+      border-radius: 10px;
+    }
+
+    .text {
+      flex: 1;
+    }
+
+    .text h2 {
+      font-size: 24px;
+      color: #c977b3;
+      margin-bottom: 10px;
+    }
+
+    .text p {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #c977b3;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 60px;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>V.E. BATIMENT</h1>
-  <nav>
-    <a href="#about">Présentation</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-    <a href="#map">Adresse</a>
-  </nav>
+  <h1>VIOLETA DABOVA EOOD</h1>
 </header>
 
-<section id="about">
-  <h2>Présentation</h2>
-  <p>Basée à Les Mureaux, V.E. BATIMENT est une entreprise spécialisée dans la maçonnerie générale et les gros travaux de construction. Grâce à une équipe qualifiée, nous réalisons des chantiers sur mesure en respectant les normes de qualité et de sécurité.</p>
-</section>
-
-<section id="services">
-  <h2>Nos Services</h2>
-  <p>Gros œuvre de bâtiment, travaux de maçonnerie, fondations, rénovation structurelle, et accompagnement personnalisé pour tous vos projets de construction.</p>
-</section>
-
-<section id="gallery">
-  <h2>Galerie</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1570126681032-3a7c41f13b0d?auto=format&fit=crop&w=800&q=80" alt="chantier 1">
-    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="chantier 2">
-    <img src="https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=800&q=80" alt="chantier 3">
+<div class="section">
+  <img src="https://avatars.mds.yandex.net/i?id=47c45304e7a3d48d1bb0614deb942e108bdf3dc2-5242289-images-thumbs&n=13" alt="Beauty 1">
+  <div class="text">
+    <h2>Elegance & Care</h2>
+    <p>We offer premium beauty services designed to make you feel confident, elegant, and radiant every day.</p>
   </div>
-</section>
+</div>
 
-<section id="contact">
-  <h2>Contactez-nous</h2>
-  <p>Email : contact@vebatiment.shop</p>
-  <p>Téléphone : +33 6 05 99 64 90</p>
-  <form class="contact-form">
-    <input type="text" placeholder="Nom">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Votre message"></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-</section>
+<div class="section">
+  <img src="https://avatars.mds.yandex.net/i?id=53b0fae7c489bb32e6a4b1c8bea760f50d4d083b-6416987-images-thumbs&n=13" alt="Beauty 2">
+  <div class="text">
+    <h2>Personalized Treatments</h2>
+    <p>From skincare to hair care, our services are tailored to your unique needs using high-quality products and gentle techniques.</p>
+  </div>
+</div>
 
-<section id="map">
-  <h2>Adresse</h2>
-  <p>66 Avenue du Maréchal Foch, 78130 Les Mureaux, France</p>
-  <iframe src="https://www.google.com/maps?q=66+Avenue+du+Mar%C3%A9chal+Foch,+Les+Mureaux,+France&output=embed" allowfullscreen loading="lazy"></iframe>
-</section>
+<div class="section">
+  <img src="https://avatars.mds.yandex.net/i?id=e619b8c5921d50e1a50307e96095619bcb7d749a-5869170-images-thumbs&n=13" alt="Beauty 3">
+  <div class="text">
+    <h2>Relax & Rejuvenate</h2>
+    <p>Our studio is a calm oasis where you can relax, recharge, and receive top-level professional beauty care in Pazardzhik.</p>
+  </div>
+</div>
+
+<div class="section">
+  <img src="https://avatars.mds.yandex.net/i?id=438f54e629a71ec469372e1bd4f0d2fc1fa7801e-5659524-images-thumbs&n=13" alt="Contact Us">
+  <div class="text">
+    <h2>Book Your Visit</h2>
+    <p>Contact us at <strong>contact@vbdol.shop</strong> or call <strong>+359 882 251 582</strong>. Visit us at 51 Dvanadeseta Str., Malo Konare, Pazardzhik.</p>
+  </div>
+</div>
 
 <footer>
-  &copy; 2025 V.E. BATIMENT — Tous droits réservés
+  VIOLETA DABOVA EOOD – contact@vbdol.shop – +359 882 251 582
 </footer>
 
 </body>
